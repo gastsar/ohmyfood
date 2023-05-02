@@ -1,0 +1,64 @@
+.footer {
+
+    background-color: #353535;
+    padding: 1.5rem;
+
+    @include desktop-only {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 2em 1em 1em 1em;
+
+    }
+
+    &__logo {
+        color: $colour-white;
+        padding-bottom: 1em;
+
+        @include desktop-only {
+            margin: 0 2em;
+            padding: 0;
+        }
+
+        & h2 {
+            font-family: 'Shrikhand';
+            margin: 0;
+        }
+    }
+
+    &__list {
+        @include desktop-only {
+            display: flex;
+
+        }
+
+        & ul {
+
+            @include desktop-only {
+                display: flex;
+                margin: 0 1.5em;
+            }
+
+            & li {
+                padding: 0.5em 0;
+                @include desktop-only {
+                    margin: 0 0.5em;
+                }
+
+                & a {
+                    color: $colour-white;
+
+                    & i {
+                        width: 30px;
+                    }
+                }
+
+            }
+
+        }
+        & ul:nth-child(2n+0){
+font-weight: lighter;
+        }
+    }
+
+}

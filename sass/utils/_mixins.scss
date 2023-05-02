@@ -1,0 +1,42 @@
+@mixin font {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@mixin overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* @mixin center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+} */
+
+$breakpoints: (
+    "mobile": 576px,
+    "tablet": 943px,
+    "desktop": 1042px
+);
+
+@mixin mobile-only {
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

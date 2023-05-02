@@ -1,0 +1,174 @@
+.image {
+    & img {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        z-index: -5;
+    }
+}
+
+
+.main {
+    margin-top: -55px;
+    padding: 2em 20px;
+    background-color: $colour-grey2;
+    border-radius: 50px 50px 0 0;
+
+    @include desktop-only {
+        max-width: 1055px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2em 10em;
+
+    }
+
+    &__titre {
+        display: flex;
+        font-family: 'Shrikhand';
+        align-items: center;
+        justify-content: space-between;
+
+        @include desktop-only {
+            justify-content: center;
+        }
+
+        & h1 {
+            margin-right: 1em;
+            font-weight: lighter;
+            font-size: 28px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.section {
+    animation: section-appear 0.5s ease-in-out both;
+
+    &__title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5em;
+       
+        & h2 {
+            font-weight: 100;
+            margin-bottom: 0.2em;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 5px;
+            width: 3em;
+            background-color: #99E2D0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+}
+
+.menu {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 12px 0px;
+
+    &__name {
+        width: 100%;
+
+        padding: 16px;
+        gap: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+
+        & h3 {
+            font-weight: initial;
+            @include overflow;
+        }
+
+        & p {
+            @include overflow;
+
+        }
+    }
+
+    &__price {
+        display: flex;
+        margin-right: 1em;
+        align-items: end;
+
+        & span {
+            padding-bottom: 15px;
+        }
+
+    }
+
+    &:hover>.menu__icone {
+        margin-right: 0;
+        cursor: pointer;
+
+        & i {
+            transform: rotatey(360deg);
+        }
+    }
+
+    &__icone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6em;
+        transition: margin-right 1000ms;
+        background-color: #99E2D0;
+        margin-right: -6em;
+
+
+        & i {
+            transform: rotatey(0deg);
+            transition: all 500ms linear;
+            background-color: $colour-white;
+            border-radius: 50%;
+            padding: 3px;
+            color: $colour-tertiaire ;
+        }
+    }
+}
+
+@keyframes section-appear {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 2;
+    }
+}
+
+$section-delay: 0.40s;
+
+.section:nth-child(2) {
+    animation-delay: $section-delay;
+}
+
+.section:nth-child(3) {
+    animation-delay: $section-delay * 2;
+}
+
+.section:nth-child(4) {
+    animation-delay: $section-delay * 3;
+}

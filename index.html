@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,500;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Oh my food</title>
+
+</head>
+
+<body>
+    <div class="load">
+        <span class="load__loader load__loader--anim"></span>
+    </div> 
+    <header class="header">
+        <img src="./assets/img/logo/ohmyfood@2x.svg" alt="">
+    </header>
+    <form class="form">
+        <div class="form__local">
+            <label for="local"><i class="fa-solid fa-location-dot"></i></label>
+            <input type="text" name="local" id="local" value="" placeholder="Paris, Belleville">
+        </div>
+
+        <div class="form__explore">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="btn explore__btn">Explorer nos restaurants</button>
+        </div>
+
+    </form>
+
+    <main class="sct">
+
+        <section class="sct__activity">
+            <h2>Fonctionnement</h2>
+            <ul>
+                <li><a href="#"><span class="activity__indice">1</span><span class="icone icone-select"><i
+                                class="fa-solid fa-mobile-screen"></i></span><span>Choisissez un restaurant</span></a>
+                </li>
+                <li><a href="#"><span class="activity__indice">2</span><span class="icone icone-select"><i
+                                class="fa-solid fa-list"></i></span><span>Composez votre menu</span></a></li>
+                <li><a href="#"><span class="activity__indice">3</span><span class="icone icone-select"><i
+                                class="fa-solid fa-store"></i></span><span>Dégustez au restaurant</span></a></li>
+            </ul>
+        </section>
+
+        <section class="sct__resto">
+            <h2>Restaurants</h2>
+            <div class="sct__resto__card">
+                <article class="card ">
+                    <a href="./restaurants/resto1.html">
+
+                        <div class="card__image ">
+                            <img src="assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        </div>
+                        <div class="card__body">
+                            <div>
+                                <h3>La palette de goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="icone icone__heart">
+                                <i class="fa-solid fa-2x fa-heart"> </i>
+                                <i class="fa-regular fa-2x fa-heart"></i>
+                            </div>
+
+                        </div>
+                        <span class="card__notif">Nouveau</span>
+
+
+
+                    </a>
+                </article>
+                <article class="card ">
+                    <a href="./restaurants/resto2.html">
+                        <div class="card__image ">
+                            <img src="assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+
+                        </div>
+                        <div class="card__body">
+                            <div>
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="icone icone__heart">
+                                <i class="fa-solid fa-2x fa-heart"> </i>
+                                <i class="fa-regular fa-2x fa-heart"></i>
+                            </div>
+                        </div>
+
+                        <span class="card__notif">Nouveau</span>
+                    </a>
+                </article>
+                <article class="card ">
+                    <a href="./restaurants/resto3.html">
+                        <div class="card__image ">
+                            <img src="assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                            <!-- <span class="card__notif">Nouveau</span> -->
+                        </div>
+                        <div class="card__body">
+                            <div>
+                                 <h3>A la française</h3>
+                            <p>Cité Rouge</p>
+                            </div>
+                           <div class="icone icone__heart">
+                            <i class="fa-solid fa-2x fa-heart"> </i>
+                            <i class="fa-regular fa-2x fa-heart"></i>
+                        </div>
+
+                        </div>
+                        
+                    </a>
+                </article>
+                <article class="card ">
+                    <a href="./restaurants/resto4.html">
+                        <div class="card__image ">
+                            <img src="assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                            <!-- <span class="card__notif"></span> -->
+                        </div>
+                        <div class="card__body">
+                            <div>
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+
+                                <div class="icone icone__heart">
+                                    <i class="fa-solid fa-2x fa-heart"> </i>
+                                    <i class="fa-regular fa-2x fa-heart"></i>
+                                </div>  
+                        </div>
+
+                    </a>
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <h2>ohmyfood</h2>
+        </div>
+        <div class="footer__list">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href=""><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+            </ul>
+            <ul>
+
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="mailto:email@example.com?">Contact</a></li>
+            </ul>
+        </div>
+       
+
+    </footer>
+   
+
+</body>
+
+</html>

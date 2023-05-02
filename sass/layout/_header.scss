@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__back {
+        position: absolute;
+        left: 1.5rem;
+        top: 45%;
+    }
+
+}

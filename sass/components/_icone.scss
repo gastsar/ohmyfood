@@ -1,0 +1,24 @@
+.icone__heart {
+    & .fa-solid {
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: opacity 1500ms ease-out ;
+    }
+    & .fa-regular{
+        opacity: 1;
+        transition: opacity 1500ms ease-out ;
+    }
+    &:hover .fa-solid {
+        opacity: 1;
+        transition: all 500ms ;
+        
+        & +.fa-regular {
+        opacity: 0;
+        transition:0.5s all;
+    }
+    }
+}

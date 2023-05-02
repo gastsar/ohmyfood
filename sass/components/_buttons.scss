@@ -1,0 +1,16 @@
+.btn {
+    @include font();
+    border: none;
+    color: $colour-white;
+    padding: 1em 1.5em;
+    margin: 2em auto;
+    background: linear-gradient(193deg,  #9356DC , #FF79DA );
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 500ms;
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.367);
+    }
+}

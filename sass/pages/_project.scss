@@ -1,0 +1,148 @@
+.form {
+    text-align: center;
+
+    &__local {
+        background-color: #d7d6d6;
+        box-shadow: inset rgba(23, 23, 23, 0.557) 0px 20px 10px -20px;
+        width: 100%;
+        padding-left: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $colour-grey;
+
+        & label {
+            margin-right: 20px;
+        }
+
+        & input {
+            display: inline-block;
+            height: 3.5em;
+            border: none;
+            outline: none;
+            background: transparent;
+            @include font;
+
+            &::placeholder {
+
+                color: $colour-grey;
+
+            }
+        }
+    }
+
+    &__explore {
+        padding: 2rem;
+        background-color: $colour-grey2;
+
+        & h2 {
+            font-weight: bold;
+        }
+
+        & p {
+            color: $colour-grey;
+        }
+    }
+
+}
+
+.sct {
+
+    &__activity {
+        background-color: $colour-white;
+        padding: 0 1.5rem;
+        margin: 2rem 0;
+
+        @include desktop-only {
+            margin: 1.5em 8em;
+        }
+
+        & ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            @include desktop-only {
+                flex-wrap: nowrap;
+            }
+
+            & li {
+                position: relative;
+                margin: 1rem 0;
+                width: 100%;
+
+                @include desktop-only {
+
+                    @include font;
+                    min-width: 32%;
+                    margin: auto 1em;
+
+                }
+
+                & a {
+                    display: inline-block;
+                    border-radius: 20px;
+                    padding: 25px 0;
+                    width: 100%;
+                    background-color: rgba(241, 241, 241, 0.75);
+                    transition: background-color 500ms ease-in-out;
+                    box-shadow: 0px 5px 11px rgb(230, 226, 226);
+
+                    &:hover {
+                        background-color: #e9d4fc;
+
+                        & .icone-select {
+                            color: $colour-primary;
+
+                        }
+                    }
+
+                    & .activity__indice {
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background-color: $colour-primary;
+                        color: #fff;
+                        bottom: 50%;
+                        transform: translate(-50%, 50%);
+                    }
+
+                    & .icone-select {
+                        transition: color 500ms ease-in-out;
+                        color: grey;
+                        margin: 0 20px;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__resto {
+        padding: 1.5em;
+        background-color: $colour-grey2;
+
+        @include desktop-only {
+            padding: 1.5em 8em;
+
+        }
+
+        &__card {
+            display: grid;
+            grid-row-gap: 30px;
+
+            @include desktop-only {
+
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 4em;
+                grid-row-gap: 2em;
+
+            }
+        }
+    }
+
+}
