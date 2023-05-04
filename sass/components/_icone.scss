@@ -6,19 +6,17 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        transition: opacity 1500ms ease-out ;
+        transition: opacity 500ms ease-in-out ;
     }
     & .fa-regular{
         opacity: 1;
-        transition: opacity 1500ms ease-out ;
-    }
+        transition: opacity 500ms ease-in-out  ;
+    } 
     &:hover .fa-solid {
         opacity: 1;
-        transition: all 500ms ;
-        
-        & +.fa-regular {
-        opacity: 0;
-        transition:0.5s all;
-    }
+
+         & +.fa-regular {
+        opacity: 0;    
+    } 
     }
 }

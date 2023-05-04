@@ -23,8 +23,9 @@ p {
   margin-top: 0.5em;
 }
 
-h2 {
+h2, h3 {
   margin: 1em 0;
+  font-weight: normal;
 }
 
 a {
@@ -74,6 +75,9 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card__body h3 {
+  margin: 0;
 }
 .card__notif {
   position: absolute;
@@ -143,19 +147,17 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: opacity 1500ms ease-out;
+  transition: opacity 500ms ease-in-out;
 }
 .icone__heart .fa-regular {
   opacity: 1;
-  transition: opacity 1500ms ease-out;
+  transition: opacity 500ms ease-in-out;
 }
 .icone__heart:hover .fa-solid {
   opacity: 1;
-  transition: all 500ms;
 }
 .icone__heart:hover .fa-solid + .fa-regular {
   opacity: 0;
-  transition: 0.5s all;
 }
 
 .header {
@@ -177,7 +179,7 @@ ul {
   background-color: #353535;
   padding: 1.5rem;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 1200px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -189,7 +191,7 @@ ul {
   color: #fff;
   padding-bottom: 1em;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 1200px) {
   .footer__logo {
     margin: 0 2em;
     padding: 0;
@@ -199,12 +201,12 @@ ul {
   font-family: "Shrikhand";
   margin: 0;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 1200px) {
   .footer__list {
     display: flex;
   }
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 1200px) {
   .footer__list ul {
     display: flex;
     margin: 0 1.5em;
@@ -213,7 +215,7 @@ ul {
 .footer__list ul li {
   padding: 0.5em 0;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 1200px) {
   .footer__list ul li {
     margin: 0 0.5em;
   }
@@ -274,7 +276,7 @@ ul {
   padding: 0 1.5rem;
   margin: 2rem 0;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 992px) {
   .sct__activity {
     margin: 1.5em 8em;
   }
@@ -283,7 +285,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 1200px) {
   .sct__activity ul {
     flex-wrap: nowrap;
   }
@@ -292,8 +294,9 @@ ul {
   position: relative;
   margin: 1rem 0;
   width: 100%;
+  font-weight: 500;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 1200px) {
   .sct__activity ul li {
     font-family: "Roboto";
     font-style: normal;
@@ -306,7 +309,7 @@ ul {
 .sct__activity ul li a {
   display: inline-block;
   border-radius: 20px;
-  padding: 25px 0;
+  padding: 20px 0;
   width: 100%;
   background-color: rgba(241, 241, 241, 0.75);
   transition: background-color 500ms ease-in-out;
@@ -341,7 +344,7 @@ ul {
   padding: 1.5em;
   background-color: #EAEAEA;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 992px) {
   .sct__resto {
     padding: 1.5em 8em;
   }
@@ -350,7 +353,7 @@ ul {
   display: grid;
   grid-row-gap: 30px;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 992px) {
   .sct__resto__card {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 4em;
@@ -372,7 +375,7 @@ ul {
   background-color: #EAEAEA;
   border-radius: 50px 50px 0 0;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 992px) {
   .main {
     max-width: 1055px;
     margin-left: auto;
@@ -386,7 +389,7 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 992px) {
   .main__titre {
     justify-content: center;
   }
@@ -408,11 +411,16 @@ ul {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 .section__title h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
   font-weight: 100;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.7em;
+  text-transform: uppercase;
 }
 .section__title::after {
   content: "";
@@ -435,8 +443,7 @@ ul {
 }
 .menu__name {
   width: 100%;
-  padding: 16px;
-  gap: 10px;
+  padding: 12px;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -444,6 +451,7 @@ ul {
   font-weight: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
 }
 .menu__name p {
   overflow: hidden;

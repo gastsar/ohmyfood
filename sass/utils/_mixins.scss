@@ -19,8 +19,8 @@
 
 $breakpoints: (
     "mobile": 576px,
-    "tablet": 943px,
-    "desktop": 1042px
+    "tablet": 992px,
+    "desktop": 1200px
 );
 
 @mixin mobile-only {
