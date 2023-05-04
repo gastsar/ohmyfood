@@ -276,7 +276,7 @@ ul {
   padding: 0 1.5rem;
   margin: 2rem 0;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 742px) {
   .sct__activity {
     margin: 1.5em 8em;
   }
@@ -346,7 +346,7 @@ ul {
   padding: 1.5em;
   background-color: #EAEAEA;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 742px) {
   .sct__resto {
     padding: 1.5em 8em;
   }
@@ -355,7 +355,7 @@ ul {
   display: grid;
   grid-row-gap: 30px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 742px) {
   .sct__resto__card {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 4em;
@@ -378,7 +378,7 @@ ul {
   border-radius: 50px 50px 0 0;
   -webkit-transition: 0.25s linear;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 742px) {
   .main {
     max-width: 1055px;
     margin-left: auto;
@@ -392,7 +392,7 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 742px) {
   .main__titre {
     justify-content: center;
   }
