@@ -282,6 +282,7 @@ ul {
   }
 }
 .sct__activity ul {
+  -webkit-transition: 0.25s linear;
   display: flex;
   flex-wrap: wrap;
 }
@@ -341,6 +342,7 @@ ul {
   font-size: 1.5em;
 }
 .sct__resto {
+  -webkit-transition: 0.25s linear;
   padding: 1.5em;
   background-color: #EAEAEA;
 }
@@ -374,6 +376,7 @@ ul {
   padding: 2em 20px;
   background-color: #EAEAEA;
   border-radius: 50px 50px 0 0;
+  -webkit-transition: 0.25s linear;
 }
 @media screen and (min-width: 992px) {
   .main {

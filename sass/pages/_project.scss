@@ -1,6 +1,5 @@
 .form {
     text-align: center;
-
     &__local {
         background-color: #d7d6d6;
         box-shadow: inset rgba(23, 23, 23, 0.557) 0px 20px 10px -20px;
@@ -58,6 +57,7 @@
         }
 
         & ul {
+            -webkit-transition: .25s linear;
             display: flex;
             flex-wrap: wrap;
 
@@ -124,6 +124,7 @@
     }
 
     &__resto {
+        -webkit-transition: .25s linear;
         padding: 1.5em;
         background-color: $colour-grey2;
 

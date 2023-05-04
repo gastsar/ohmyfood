@@ -14,7 +14,7 @@
     padding: 2em 20px;
     background-color: $colour-grey2;
     border-radius: 50px 50px 0 0;
-
+    -webkit-transition: .25s linear;
     @include tablet-only {
         max-width: 1055px;
         margin-left: auto;
